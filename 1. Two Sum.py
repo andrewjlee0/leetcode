@@ -10,8 +10,7 @@ def twoSum(self, nums, target):
 
         for addend_index in range(0,len(nums)):
             addend = nums[addend_index]
-            if addend_index != index:
-                if current_number + addend == target:
+            if (addend_index != index) and (current_number + addend == target):
                     return [index,addend_index]
 
     return ['didnt work']
